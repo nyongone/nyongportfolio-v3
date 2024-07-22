@@ -33,15 +33,15 @@ globalStyle("a:link, a:visited", {
 
 globalFontFace("NanumBarunGothic", [
     {
-        src: "url('./assets/fonts/NanumBarunGothicUltraLight.ttf')",
+        src: "url('./fonts/NanumBarunGothicUltraLight.ttf')",
         fontWeight: 100,
     },
     {
-        src: "url('./assets/fonts/NanumBarunGothicLight.ttf')",
+        src: "url('./fonts/NanumBarunGothicLight.ttf')",
         fontWeight: 300,
     },
     {
-        src: "url('./assets/fonts/NanumBarunGothic.ttf')",
+        src: "url('./fonts/NanumBarunGothic.ttf')",
         fontWeight: 500,
     },
     {
