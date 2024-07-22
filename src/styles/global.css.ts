@@ -45,7 +45,7 @@ globalFontFace("NanumBarunGothic", [
         fontWeight: 500,
     },
     {
-        src: "url('./assets/fonts/NanumBarunGothicBold.ttf')",
+        src: "url('./fonts/NanumBarunGothicBold.ttf')",
         fontWeight: 700,
     },
 ]);
