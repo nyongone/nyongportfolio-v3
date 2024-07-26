@@ -1,21 +1,22 @@
-import { routes } from "@/router";
+import { useRecoilState } from "recoil";
 import { navigation } from "./navigation.css";
-import { useLocation } from "react-router-dom";
+import { pageAtom } from "@/recoil/page.atom";
+import { pages } from "@/pages";
 
 const Navigation = () => {
-    const loc = useLocation();
+    const [currentPage, setCurrentPage] = useRecoilState(pageAtom);
 
     return (
         <nav className={navigation.container}>
-            {routes.map((route) => (
+            {pages.map((page) => (
                 <a
                     className={`${navigation.item}${
-                        loc.pathname === route.path ? ` active` : ``
+                        currentPage === page.page ? ` active` : ``
                     }`}
-                    key={route.path}
-                    href={route.path}
+                    key={page.key}
+                    onClick={() => setCurrentPage(page.page)}
                 >
-                    {route.name}
+                    {page.name}
                 </a>
             ))}
         </nav>

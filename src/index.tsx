@@ -1,6 +1,11 @@
 import ReactDOM from "react-dom/client";
 import "@/styles/reset.css";
 import "@/styles/global.css";
-import Router from "./router.tsx";
+import App from "./app.tsx";
+import { RecoilRoot } from "recoil";
 
-ReactDOM.createRoot(document.getElementById("main")!).render(<Router />);
+ReactDOM.createRoot(document.getElementById("main")!).render(
+    <RecoilRoot>
+        <App />
+    </RecoilRoot>
+);
