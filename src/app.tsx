@@ -2,7 +2,7 @@ import { Layout } from "@/components/layout";
 import { pageAtom } from "@/recoil/page.atom";
 import { useRecoilValue } from "recoil";
 import { MainPage, AboutPage, ProjectsPage } from "@/pages";
-import withFramerMotion from "./utils/withFramerMotion";
+import withFramerMotion from "@/hocs/withFramerMotion";
 
 const App = () => {
     const currentPage = useRecoilValue(pageAtom);
