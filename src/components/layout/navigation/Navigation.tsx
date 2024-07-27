@@ -14,7 +14,10 @@ const Navigation = () => {
                         currentPage === page.page ? ` active` : ``
                     }`}
                     key={page.key}
-                    onClick={() => setCurrentPage(page.page)}
+                    onClick={() => {
+                        setCurrentPage(page.page);
+                        window.scrollTo({ top: 0 });
+                    }}
                 >
                     {page.name}
                 </a>
